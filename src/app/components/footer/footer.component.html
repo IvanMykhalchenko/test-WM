@@ -1,0 +1,38 @@
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__nav">
+            <div class="footer__nav_list" *ngFor="let item of footerLinks">
+                <h6>{{ item.title }}</h6>
+                <ul>
+                    <li *ngFor="let itemLink of item.items">
+                        <a href="#">
+                            {{itemLink.title}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer__socials">
+            <img src="../../../assets/svg/facebook.svg"/>
+            <img src="../../../assets/svg/instagram.svg"/>
+            <img src="../../../assets/svg/linkedin.svg"/>
+            <img src="../../../assets/svg/twitter.svg"/>
+        </div>
+
+          <ng-select class="custom"
+            bindValue="id"
+            [items]="langsList"
+            bindLabel="name"
+            [clearable]="false"
+            [(ngModel)]="local.selectedLanguage" 
+            [ngModelOptions]="{standalone: true}" 
+            (change)="onChange($event.id)"
+            >
+        </ng-select>
+    </div>
+
+    <div class="footer__text">
+        <p *ngFor="let text of textFooter">{{ text }}</p>
+    </div>
+</footer>

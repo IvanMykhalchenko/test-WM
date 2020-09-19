@@ -1,0 +1,32 @@
+.search-input {
+    padding: 10px 30px;
+    background-color: #3498FB;
+    position: relative;
+
+    &__wrapper {
+        width: 98%;
+
+        img {
+            position: absolute;
+            top: 19px;
+            right: 20px;
+        }
+    }
+
+    &__control {
+        width: 100%;
+        outline: none;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search-input {    
+        &__wrapper {
+            img {
+                top: 15px;
+                right: 10px;
+            }
+        }
+    }
+}

@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+
+    &-align-center {
+        align-items: center;
+    }
+
+    &-justify-center {
+        justify-content: center;
+    }
+}
+
+a {
+    text-decoration: none;
+}

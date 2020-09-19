@@ -1,0 +1,105 @@
+.footer {
+    background-color: #D7D7D7;
+    padding: 10px 20px 0 20px;
+    display: flex;
+    flex-flow: column;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 40px;
+        border-bottom: 1px solid grey;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+        &_list {
+            width: 33%;
+
+            h6 {
+                min-height: 35px;
+                // margin: 0;
+                margin: 0 0 20px 0;
+                font-size: 15px;
+            }
+
+            ul {
+                li {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    
+                    a {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-around;
+        width: 45%; 
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    ng-select {
+        width: 10%;
+    }
+}
+
+
+::ng-deep {
+    .mat-form-field-infix {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+
+        &__wrapper {
+            flex-flow: column;
+            align-items: center;
+        }
+
+        &__nav {
+            width: 100%;
+
+            &_list {
+
+                h6 {
+                    font-size: 12px;
+
+                    ul {
+                        li {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__text {
+            font-size: 13px;
+        }
+
+        &__socials {
+            margin-bottom: 20px;
+        }
+
+        ng-select {
+            width: 30%;
+        }
+    }
+}

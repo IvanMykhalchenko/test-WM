@@ -1,0 +1,11 @@
+
+<h2 class="games__title center">{{ local.static.chooseCategories }}</h2>
+<app-categories-list [categories]="categories$ | async" [loading]="loadingCategories" [(selectedCategoryId)]="selectedCategoryId"></app-categories-list>
+
+<div class="games__filter">
+  <app-search-input [(searchText)]="searchText"></app-search-input>
+</div>
+
+<app-games-list [games]="games$ | async | filter:selectedCategoryId:searchText" [loading]="loadingGames"></app-games-list>
+
+<app-footer></app-footer>

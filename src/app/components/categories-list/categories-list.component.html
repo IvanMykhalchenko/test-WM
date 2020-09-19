@@ -1,0 +1,18 @@
+<div class="categories">
+        <div class="categories__item"
+            *ngFor="let category of categories; let i = index"
+            (click)="selectCategory(category.id)"
+            [style.zIndex]="i + 1"
+        >
+            <img class="categories__item_image" [src]="category.img" alt="">   
+            <h3 class="categories__item_title">{{ category.title }}</h3>
+        </div>
+</div>
+<div class="flex flex-justify-center">
+    <button *ngIf="categories" mat-stroked-button color="primary" (click)="selectCategory(null)">{{ l.static.reset }}</button>
+</div>
+
+<div class="categories__spinner">
+    <mat-spinner *ngIf="loading"></mat-spinner>
+</div>
+

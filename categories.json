@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title_en": "RPG",
+    "title_ru": "РПГ",
+    "img": "https://cnet1.cbsistatic.com/img/93uMH3e8dHhNEucNfioED7-TvAU=/2018/07/31/abf6d5b3-96ef-489f-b223-26a4cb70e568/img-7041.png"
+  },
+  {
+    "id": 2,
+    "title_en": "Shooter",
+    "title_ru": "Шутер",
+    "img": "https://wallpaperaccess.com/full/1957856.jpg"
+  },
+  {
+    "id": 3,
+    "title_en": "Simulator",
+    "title_ru": "Симулятор",
+    "img": "https://news.rambler.ru/img/2020/01/30/232636.469504.6567.jpg"
+  },
+  {
+    "id": 4,
+    "title_en": "Adventures",
+    "title_ru": "Приключения",
+    "img": "https://www.imgworlds.com/wp-content/themes/IMG2019/img/favicon/og-thumb.png"
+  },
+  {
+    "id": 5,
+    "title_en": "Strategy",
+    "title_ru": "Стратегия",
+    "img": "https://cdn.mos.cms.futurecdn.net/bvXqEFZahh5ygezwPeXRvb.jpg"
+  },
+  {
+    "id": 6,
+    "title_en": "Puzzle",
+    "title_ru": "Головоломка",
+    "img": "https://1onlineplay.com/img/candy-crush-3-match-puzzle.jpg"
+  }
+]

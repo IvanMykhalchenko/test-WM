@@ -1,0 +1,15 @@
+.games {
+
+    &__title {
+        letter-spacing: 2px;
+
+        &.center {
+            text-align: center;
+        }
+
+    }
+    
+    &__filter {
+        margin: 30px 0;
+    }
+}

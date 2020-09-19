@@ -1,0 +1,16 @@
+
+<div class="flex flex-align-center">
+    <h2 class="games__title left">{{ l.static.mostPopular }}</h2><span *ngIf="games" class="games__label">{{ games.length }}</span>
+</div>
+<div class="games">
+    <div class="games__item" *ngFor="let game of games"> 
+        <div class="games__item_image">
+            <img [src]="game.img" alt="">
+        </div>
+        <h3 class="games__item_title">{{ game.title }}</h3>
+    </div>
+</div>
+
+<div class="games__spinner">
+    <mat-spinner *ngIf="loading"></mat-spinner>
+</div>
